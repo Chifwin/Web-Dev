@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook login page</title>
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            margin: 0 0 0 0;
+        }
+        h2{
+            font-weight: normal;
+        }
+        a:link, a:visited{
+            color: black;
+            text-decoration: none;
+        }
+        a:focus, a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #top-part{
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 72px;
+            padding-bottom: 112px;
+            align-items: center;
+            text-align: center;
+            width: available;
+        }
+        #title{
+            margin: 60px;
+            width: 400px;
+            font-size: 18px;
+        }
+        #image{
+            align-self: start;
+            width: 300px;
+        }
+        #main-box{
+            align-items: center;
+            width: 400px;
+            border-radius: 6px;
+        }
+        #input-box{
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 24px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            width: 396px;
+        }
+        input{
+            border-radius: 6px;
+        }
+        .input-text{
+            padding: 14px 16px 14px 16px;
+            width: 332px;
+            cursor: text;
+            border: 1px solid #dddfe2;
+            font-size: 17px;
+        }
+        .input{
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+        .button{
+            cursor: pointer;
+            border: none;
+            padding: 14px 16px 14px 16px;
+        }
+        #login-button{
+            background-color: #166fe5;
+            color: white;
+            font-size: 20px;
+            width: 364px;
+            margin-top: 10px;
+        }
+        #forgot-pass{
+            margin-top: 16px;
+            font-size: 14px;
+        }
+        #forgot-pass a:link, #forgot-pass a:visited{
+            color: #1877f2;
+        }
+        .line{
+            border-top: 1px solid #dadde1;
+            margin: 20px 16px 20px 16px
+        }
+        #new-acc-button{
+            cursor: pointer;
+            background-color: #42b72a;
+            font-size: 17px;
+            color: white;
+        }
+        p{
+            font-size: 14px;
+        }
+        #links{
+            background-color: white;
+            color: #8a8d91;
+            padding-top: 15px;
+            padding-left: 20px;
+            line-height: 1.6;
+            font-size: 12px;
+            width: available;
+        }
+        #links a:link, #links a:visited{
+            background-color: inherit;
+            color: inherit;
+        }
+        ul{
+            margin-left: -40px;
+            color: inherit;
+            list-style-type: none;
+        }
+        li{
+            padding-left: 20px;
+            display: inline-block;
+        }
+        #second-line{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        #copyright{
+            font-size: inherit;
+            padding-left: inherit;
+        }
+    </style>
+</head>
+<body>
+
+<div id="top-part">
+    <div id="title">
+        <img id="image" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook title">
+        <h2>Facebook helps you connect and share with the people in your life.</h2>
+    </div>
+
+    <div id="main-box">
+        <div id="input-box">
+            <div class="input">
+                <input class="input-text" type="text" placeholder="Email address or phone number">
+            </div>
+            <div class="input">
+                <input class="input-text" type="password" placeholder="Password">
+            </div>
+
+            <input class="button" id="login-button" type="button" value="Log in">
+            <div id="forgot-pass"><a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ…zQ3MDYwLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login">Forgotten password?</a></div>
+            <div class="line"></div>
+            <input class="button" id="new-acc-button" type="button" value="Create new account">
+        </div>
+
+        <p><strong><a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a></strong> for a celebrity, brand or business.</p>
+
+    </div>
+</div>
+
+<div id="links">
+    <ul><li>English (UK)</li><li><a href="https://ru-ru.facebook.com/">Русский</a></li><li><a href="https://tr-tr.facebook.com/">Türkçe</a></li><li><a href="https://id-id.facebook.com/">Bahasa Indonesia</a></li><li><a href="https://zh-cn.facebook.com/">中文(简体)</a></li><li><a href="https://kk-kz.facebook.com/">Қазақша</a></li><li><a href="https://de-de.facebook.com/">Deutsch</a></li><li><a href="https://ko-kr.facebook.com/">한국어</a></li><li><a href="https://sq-al.facebook.com/">Shqip</a></li><li><a href="https://es-la.facebook.com/">Español</a></li><li><a href="https://pt-br.facebook.com/">Português (Brasil)</a></li></ul>
+    <div class="line" id="second-line"></div>
+    <div id="bottom-links"><ul><li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li><li><a href="/login/" title="Log in to Facebook">Log in</a></li><li><a href="https://messenger.com/" title="Take a look at Messenger.">Messenger</a></li><li><a href="/lite/" title="Facebook Lite for Android.">Facebook Lite</a></li><li><a href="https://www.facebook.com/watch/" title="Browse our Watch videos.">Watch</a></li><li><a href="/places/" title="Take a look at popular places on Facebook.">Places</a></li><li><a href="/games/" title="Check out Facebook games.">Games</a></li><li><a href="/marketplace/" title="Buy and sell on Facebook Marketplace.">Marketplace</a></li><li><a href="https://pay.facebook.com/" title="Learn more about Meta Pay" target="_blank">Meta Pay</a></li><li><a href="https://www.oculus.com/" title="Learn more about Oculus" target="_blank">Oculus</a></li><li><a href="https://portal.facebook.com/" title="Learn more about Facebook Portal" target="_blank">Portal</a></li><li><a href="https://www.instagram.com/" title="Take a look at Instagram" target="_blank" rel="noopener nofollow" data-lynx-mode="asynclazy" data-lynx-uri="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AT3btOYGl-J9WVDnQ8Har2BMn31Fuh-dEXf9C3MctgWrW04N5njfLE4c20jU6NDheCoI_31NtJghYO0kp9GYWaAU-2hXtd8CJQQtzSzaAl1Z2l9u65H3w4NtQs4VJiDT9Vrr4oJgeKmGZq8eaD1ZeeoPQ9mX-b1RZTrJhw">Instagram</a></li><li><a href="https://www.bulletin.com/" title="Take a look at Bulletin newsletter">Bulletin</a></li><li><a href="/fundraisers/" title="Donate to worthy causes.">Fundraisers</a></li><li><a href="/biz/directory/" title="Browse our Facebook Services directory.">Services</a></li><li><a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D" title="See the Voting Information Centre">Voting Information Centre</a></li><li><a href="/privacy/policy/?entry_point=facebook_page_footer" title="Learn how we collect, use and share information to support Facebook.">Privacy Policy</a></li><li><a href="/privacy/center/?entry_point=facebook_page_footer" title="Learn how to manage and control your privacy on Facebook.">Privacy Centre</a></li><li><a href="/groups/explore/" title="Explore our groups.">Groups</a></li><li><a href="https://about.meta.com/" accesskey="8" title="Read our blog, discover the resource centre and find job opportunities.">About</a></li><li><a href="https://www.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto" title="Advertise on Facebook">Create ad</a></li><li><a href="/pages/create/?ref_type=site_footer" title="Create a Page">Create Page</a></li><li><a href="https://developers.facebook.com/?ref=pf" title="Develop on our platform.">Developers</a></li><li><a href="/careers/?ref=pf" title="Make your next career move to our brilliant company.">Careers</a></li><li><a href="/policies/cookies/" title="Learn about cookies and Facebook." data-nocookies="1">Cookies</a></li><li><a class="_41ug" data-nocookies="1" href="https://www.facebook.com/help/568137493302217" title="Learn about AdChoices.">AdChoices<i class="img sp_h4Swrc8tiWJ_1_5x sx_c523d9"></i></a></li><li><a data-nocookies="1" href="/policies?ref=pf" accesskey="9" title="Review our terms and policies.">Terms</a></li><li><a href="/help/?ref=pf" accesskey="0" title="Visit our Help Centre.">Help</a></li><li><a href="help/637205020878504" title="Visit our contact uploading and non-users notice.">Contact uploading and non-users</a></li><li><a accesskey="6" class="accessible_elem" href="/settings" title="View and edit your Facebook settings.">Settings</a></li><li><a accesskey="7" class="accessible_elem" href="/allactivity?privacy_source=activity_log_top_menu" title="View your activity log">Activity log</a></li></ul></div>
+    <p id="copyright"> Meta © 2023</p>
+
+</div>
+
+</body>
+</html>
