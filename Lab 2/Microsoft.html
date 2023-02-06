@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft title</title>
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+        #header{
+            margin: 0 50px;
+            display: flex;
+            flex-direction: row;
+            color: #262626;
+            font-size: 13px;
+            width: available;
+        }
+        #header img{
+            padding: 16px 6px 16px 10px;
+        }
+        #header a{
+            text-decoration: none;
+            color: inherit;
+            font-size: inherit;
+        }
+        #header-links{
+            flex-grow: 1;
+            padding: 16px 8px 10px 8px;
+            margin: 7px 0;
+        }
+        .header-link{
+            margin-left: 10px;
+        }
+        #left-header{
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+        }
+        #left-header img{
+            padding: 12px 8px 10px 8px;
+        }
+        #header p{
+            padding: 23px 0 17px 16px;
+            margin: 0;
+        }
+        #main-button {
+            position: relative;
+            text-align: left;
+            min-width: 1000px;
+            color: white;
+        }
+        #main-button-text{
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            height: 40%;
+            width: 30%;
+        }
+        #main-button-text p{
+            margin: 30px 0;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        #last-link{;
+            background-color: #0067b8;
+        }
+        #main-button-text a:link, #main-button-text a:visited{
+            text-decoration: none;
+            color: white;
+            padding: 10px 12px;
+            border: none;
+            border-radius: 3px;
+        }
+        #news{
+            margin: 80px 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        .item{
+            margin: 0 15px;
+            flex: 1;
+            font-size: 1.5rem;
+        }
+        .item h2{
+            font-weight: normal;
+        }
+        .item p{
+            font-size: 1rem;
+            line-height: 25px;
+        }
+        .item a:link, .item a:visited{
+            font-size: 1rem;
+            font-weight: bold;
+            color: #0067b8;
+            text-decoration: none;
+        }
+        .item a:hover{
+            text-decoration: underline;
+        }
+        .item a:focus{
+            border: #0067b8 dashed;
+        }
+        .item img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <img src="	https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" height="22px">
+        <div id="header-links">
+            <a class="header-link" href="https://www.microsoft.com/microsoft-365">Microsoft 365</a>
+            <a class="header-link" href="https://www.microsoft.com/microsoft-365/microsoft-office">Office</a>
+            <a class="header-link" href="https://www.microsoft.com/ru-ru/windows/">Windows</a>
+            <a class="header-link" href="https://support.microsoft.com/ru-kz">Поддержка</a>
+        </div>
+        
+        <div id="left-header">
+            <p>Продукты Майкрософт</p>
+            <p>Поиск</p>
+            <img src="Microsoft search button.png" height="30px">
+            <p>Войти</p>
+            <img src="Microsoft login button.png" height="50%">
+        </div>
+    </div>
+
+    <a href="https://support.microsoft.com/ru-ru/windows#pchealthcheck">
+        <div id="main-button">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600" width="100%">
+            <div id="main-button-text">
+                <h1>Разработано для жизни — сегодня и в будущем</h1>
+                <p>Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете еще ближе к тому, что успели полюбить.</p>
+                <a id="last-link" href="https://www.microsoft.com/ru-ru/windows/windows-11?icid=mscom_marcom_H1a_Win11PChlth#pchealthcheck">Проверьте, готов ли ваш ПК</a>
+            </div>
+        </div>
+    </a>
+    
+    <div id="news">
+        <div class="item">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-M365-Icon-Bounce-Word-Merch?wid=515&hei=293&fit=crop">
+            <h2>Microsoft 365</h2>
+            <p> Приложения и функции, которые помогут вам воплотить идеи в реальность, оставаться в безопасности и сосредоточиться на важных вещах в жизни. </p>
+            <a href="https://www.microsoft.com/ru-kz/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5bf?icid=mscom_marcom_CPH1a_M365Personal">Подробнее</a>
+        </div>
+        <div class="item">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=515&hei=293&fit=crop">
+            <h2>Microsoft Edge</h2>
+            <p> Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей. </p>
+            <a href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Скачать</a>
+        </div>
+        <div class="item">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=515&hei=293&fit=crop">
+            <h2>Microsoft OneDrive</h2>
+            <p> Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно. </p>
+            <a href="https://www.microsoft.com/ru-ru/microsoft-365/onedrive/online-cloud-storage?icid=mscom_marcom_CPH3a_OneDrive">Подробнее</a>
+        </div>
+        <div class="item">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=515&hei=293&fit=crop">
+            <h2>OneNote</h2>
+            <p> Приведите свои заметки и дела в порядок. </p>
+            <a href="https://www.microsoft.com/ru-ru/microsoft-365/onenote/digital-note-taking-app?icid=mscom_marcom_CPH4a_OneNote">Подробнее</a>
+        </div>
+    </div>
+</body>
+</html>
