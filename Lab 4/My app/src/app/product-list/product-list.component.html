@@ -1,0 +1,32 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <img src="{{ product.image }}" alt="product's image" height="250px" />
+  <br />
+  <a [href] = "product.kaspi"> View in kaspi </a>
+  <br>
+    <a
+      href="https://telegram.me/share/url?url={{ product.kaspi }}"
+      target="_blank"
+    >
+      <button type="button" (click)="share()">Share</button>
+    </a>
+
+    <app-product-alerts [product]="product" (notify)="onNotify()">
+    </app-product-alerts>
+
+</div>
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
