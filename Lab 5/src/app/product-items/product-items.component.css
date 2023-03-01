@@ -1,0 +1,18 @@
+.prods {
+  display: flex;
+  flex-flow: column;
+  width: 700px;
+}
+
+.item{
+  width: 700px;
+  border: #616161 1px solid;
+  margin: 10px;
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
