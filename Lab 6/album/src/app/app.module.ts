@@ -10,7 +10,8 @@ import {AlbumPhotosComponent} from './components/album-photos/album-photos.compo
 import {RouterOutlet} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import {GlobalErrorComponent} from './components/global-error/global-error.component';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     BrowserModule,
     RouterOutlet,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

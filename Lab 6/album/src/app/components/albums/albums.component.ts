@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Album} from "../../data/album";
 import {AlbumService} from "../../services/album.service";
-import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-albums',
@@ -19,4 +18,25 @@ export class AlbumsComponent implements OnInit {
       this.albums = albums;
     })
   }
+
+  deleteAlbum(id: number){
+    fetch('https://jsonplaceholder.typicode.com/posts/'+id, {
+      method: 'DELETE',
+    }).then();
+  }
+
+  createAlbum(id:number, userId: number, title: string){
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: 'POST',
+      body: JSON.stringify({
+        title: title,
+        id: id,
+        userId: userId,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    }).then();
+  }
+
 }
