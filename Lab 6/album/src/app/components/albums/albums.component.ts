@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Album} from "../../data/album";
+import {AlbumService} from "../../services/album.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-albums',
@@ -7,29 +9,14 @@ import {Album} from "../../data/album";
   styleUrls: ['./albums.component.css']
 })
 export class AlbumsComponent implements OnInit {
-  albums: Album[] = [
-    {
-      "userId": 1,
-      "id": 1,
-      "title": "quidem molestiae enim"
-    },
-    {
-      "userId": 1,
-      "id": 2,
-      "title": "sunt qui excepturi placeat culpa"
-    },
-    {
-      "userId": 1,
-      "id": 3,
-      "title": "omnis laborum odio"
-    },
-    {
-      "userId": 1,
-      "id": 4,
-      "title": "non esse culpa molestiae omnis sed optio"
-    }];
+  albums: Album[] = [];
+
+  constructor(private albumService: AlbumService) {
+  }
 
   ngOnInit(): void {
-
+    this.albumService.getAlbums().subscribe((albums: Album[]) => {
+      this.albums = albums;
+    })
   }
 }

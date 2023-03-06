@@ -9,6 +9,8 @@ import {AlbumDetailComponent} from './components/album-detail/album-detail.compo
 import {AlbumPhotosComponent} from './components/album-photos/album-photos.component';
 import {RouterOutlet} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
+import {GlobalErrorComponent} from './components/global-error/global-error.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -18,12 +20,14 @@ import {AppRoutingModule} from "./app-routing.module";
     AboutComponent,
     AlbumsComponent,
     AlbumDetailComponent,
-    AlbumPhotosComponent
+    AlbumPhotosComponent,
+    GlobalErrorComponent
   ],
   imports: [
     BrowserModule,
     RouterOutlet,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

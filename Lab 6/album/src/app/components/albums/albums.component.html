@@ -1,6 +1,6 @@
 <h2>Albums list</h2>
 
-<div id="albums">
+<div id="albums" *ngIf="albums">
   <div *ngFor="let album of albums" class="album">
     <a routerLink="/albums/{{album.id}}">
       <p> Title: {{ album.title }} </p>
