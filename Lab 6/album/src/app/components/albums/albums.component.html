@@ -1,1 +1,11 @@
-<p>albums works!</p>
+<h2>Albums list</h2>
+
+<div id="albums">
+  <div *ngFor="let album of albums" class="album">
+    <a routerLink="/albums/{{album.id}}">
+      <p> Title: {{ album.title }} </p>
+    </a>
+    <p> Id: {{ album.id }} </p>
+    <p> User id: {{ album.userId }} </p>
+  </div>
+</div>

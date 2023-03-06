@@ -1,0 +1,10 @@
+.album{
+  margin: 2px;
+  border: darkgray solid 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+.album a{
+  text-decoration: none;
+  color: blue;
+}
