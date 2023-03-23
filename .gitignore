@@ -1,4 +1,6 @@
-*/.gitignore
-/.vscode
-/.idea
-/node_modules
+**/.gitignore
+**/.vscode
+**/.idea
+**/node_modules
+**/.angular
+.gitignore
