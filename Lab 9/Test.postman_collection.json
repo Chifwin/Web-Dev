@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "fd7bbf6c-f1c1-4cf4-b4af-fc170fbf67f8",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26770760"
+	},
+	"item": [
+		{
+			"name": "Reqs",
+			"item": [
+				{
+					"name": "Companies",
+					"item": [
+						{
+							"name": "List of companies",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/companies",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"companies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "One company",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/companies/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"companies",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List of Vacancies by Company",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/companies/1/vacancies",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"companies",
+										"1",
+										"vacancies"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Vacancies",
+					"item": [
+						{
+							"name": "List of vacancies",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/vacancies",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"vacancies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show one vacancy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/vacancies/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"vacancies",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Top 10 vacancies",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/vacancies/top_ten/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"vacancies",
+										"top_ten",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
