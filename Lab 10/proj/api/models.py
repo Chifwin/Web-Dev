@@ -13,7 +13,9 @@ class Company(models.Model):
         verbose_name_plural = 'Companies'
 
     def to_json(self):
+        print(dir(self))
         return {
+            'id': self.id,
             'name': self.name,
             'description': self.description,
             'city': self.city,
