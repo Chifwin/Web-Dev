@@ -7,6 +7,6 @@ urlpatterns = [
     path('companies/<int:comp_id>/vacancies/', vacancy_by_company),
 
     path('vacancies/', vacancy_list),
-    path('vacancies/<int:vac_id>/', vacancy_one),
+    path('vacancies/<int:vac_id>/', VacancyOne.as_view()),
     path('vacancies/top_ten/', vacancy_top10),
 ]
