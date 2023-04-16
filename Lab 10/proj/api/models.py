@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Company(models.Model):
     name = models.CharField(max_length=255)
@@ -13,7 +12,6 @@ class Company(models.Model):
         verbose_name_plural = 'Companies'
 
     def to_json(self):
-        print(dir(self))
         return {
             'id': self.id,
             'name': self.name,
@@ -21,6 +19,8 @@ class Company(models.Model):
             'city': self.city,
             'address': self.address
         }
+
+
 class Vacancy(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
