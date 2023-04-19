@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Company} from "./models";
-import {CompanyService} from "./company.service";
+import {Vacancy} from "./models";
+import {CompaniesService} from "./services/companies.service";
 
 @Component({
   selector: 'app-root',
@@ -10,13 +10,13 @@ import {CompanyService} from "./company.service";
 export class AppComponent implements OnInit{
   title = 'hh-front';
 
-  companies: Company[] = [];
+  companies: Vacancy[] = [];
 
-  constructor(private company_serv: CompanyService) {
+  constructor(private company_serv: CompaniesService) {
   }
 
   ngOnInit() {
-    this.company_serv.getCompanies().subscribe((data) => {
+    this.company_serv.get_companies().subscribe((data) => {
         this.companies = data;
       }
     )

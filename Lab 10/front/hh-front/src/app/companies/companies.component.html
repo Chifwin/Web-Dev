@@ -1,0 +1,14 @@
+<div class="top">
+  <p>Companies list</p>
+</div>
+
+<div class="list">
+  <div *ngFor="let company of companies" class="company">
+    <a routerLink="/companies/{{company.id}}/vacancies">
+      <p>Name: {{company.name}}</p>
+      <p>Description: {{company.description}}</p>
+      <p>Address: {{company.address}}</p>
+      <p>City: {{company.city}}</p>
+    </a>
+  </div>
+</div>
